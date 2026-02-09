@@ -96,7 +96,7 @@ tooltip label {
 
 #power-profiles-daemon.balanced {
     color: black;
-    background-color: white;
+    background-color: rgba(255, 253, 100, 1);
 }
 
 #power-profiles-daemon.power-saver {
