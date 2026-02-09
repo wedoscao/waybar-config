@@ -9,7 +9,7 @@
         "battery",
         "clock"
     ],
-    "sway/window": {
+    "hyprland/window": {
         "max-length": 50
     },
     "battery": {
