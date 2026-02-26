@@ -8,43 +8,38 @@
 }
 
 window#waybar {
-    background: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: white;
+    background: rgba(30, 30, 46, 0.5);
+    border-bottom: 3px solid rgba(108, 112, 134, 0.5);
+    color: #eff1f5;
 }
 
 tooltip {
-    background: rgba(43, 48, 59, 0.5);
-    border: 1px solid rgba(100, 114, 125, 0.5);
+    background: rgba(24, 24, 37, 0.5);
+    border: 1px solid rgba(108, 112, 134, 0.5);
 }
 
 tooltip label {
-    color: white;
+    color: #eff1f5;
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: white;
+    color: #eff1f5;
     border-bottom: 3px solid transparent;
-    background-color: rgba(0, 255, 225, 0.5);
+    background-color: #7287fd;
     margin: 0 1px;
 }
 
-
-#workspaces button.focused {
-    background: #64727D;
-    border-bottom: 3px solid white;
-}
-
 #workspaces button.active {
-    background-color: rgba(194, 30, 86, 0.8);
+    background-color: #e64553;
 }
 
 #clock:hover,
 #pulseaudio:hover,
 #power-profiles-daemon:hover,
-#idle_inhibitor:hover {
+#idle_inhibitor:hover,
+#workspaces button:not(.active):hover {
     opacity: 0.6;
 }
 
@@ -59,29 +54,29 @@ tooltip label {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: #303446;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: black;
+    background-color: #eff1f5;
+    color: #11111b;
 }
 
 #battery.charging {
-    color: white;
-    background-color: #26A65B;
+    color: #eff1f5;
+    background-color: #40a02b;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: black;
+        background-color: #eff1f5;
+        color: #11111b;
     }
 }
 
 #battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
+    background: #d20f39;
+    color: #eff1f5;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -90,32 +85,36 @@ tooltip label {
 }
 
 #network {
-    color: black;
-    background-color: white;
+    color: #11111b;
+    background-color: #eff1f5;
 }
 
 #pulseaudio {
-    background: rgba(0, 122, 255, 0.5);
+    background: #04a5e5;
 }
 
 #power-profiles-daemon.performance {
-    background-color: rgba(255, 30, 40, 0.6);
+    background-color: #d20f39;
 }
 
 #power-profiles-daemon.balanced {
-    color: black;
-    background-color: rgba(255, 253, 100, 1);
+    color: #11111b;
+    background-color: #e5c890;
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: rgba(10, 225, 30, 0.6);
+    color: #11111b;
+    background-color: #81c8be;
+}
+
+#idle_inhibitor {
+    color: #11111b;
 }
 
 #idle_inhibitor.activated {
-    background-color: rgba(200, 100, 255, 0.8);
+    background-color: #cba6f7;
 }
 
 #idle_inhibitor.deactivated {
-    color: black;
-    background-color: rgba(200, 247, 197, 1);
+    background-color: #a6da95;
 }

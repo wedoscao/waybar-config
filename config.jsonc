@@ -10,6 +10,11 @@
         "battery",
         "clock"
     ],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by-number": true
+    },
     "hyprland/window": {
         "max-length": 50
     },
