@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 2px;
-    font-family: CaskaydiaCove Nerd Font, sans-serif;
+    font-family:  "CaskaydiaCove Nerd Font", sans-serif;
     font-size: 14px;
     min-height: 0;
     font-weight: bold;
@@ -36,7 +36,7 @@ tooltip label {
 }
 
 #clock:hover,
-#pulseaudio:hover,
+#wireplumber:hover,
 #power-profiles-daemon:hover,
 #idle_inhibitor:hover,
 #workspaces button:not(.active):hover {
@@ -45,7 +45,7 @@ tooltip label {
 
 #clock,
 #battery,
-#pulseaudio,
+#wireplumber,
 #network,
 #power-profiles-daemon,
 #idle_inhibitor {
@@ -89,8 +89,13 @@ tooltip label {
     background-color: #eff1f5;
 }
 
-#pulseaudio {
+#wireplumber {
     background: #04a5e5;
+}
+
+#wireplumber.muted {
+    background-color: #f38ba8; /* A reddish color for muted */
+    color: #11111b;
 }
 
 #power-profiles-daemon.performance {

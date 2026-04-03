@@ -5,7 +5,7 @@
     "modules-right": [
         "idle_inhibitor",
         "power-profiles-daemon",
-        "pulseaudio",
+        "wireplumber",
         "network",
         "battery",
         "clock"
@@ -26,11 +26,11 @@
         "format-alt": "{:%a, %d. %b  %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
-    "pulseaudio": {
+    "wireplumber": {
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": " {icon}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "󰝟 {icon}",
+	"format-muted": "󰝟  Muted",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
