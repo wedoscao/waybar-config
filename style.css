@@ -38,8 +38,8 @@ tooltip label {
 #clock:hover,
 #wireplumber:hover,
 #power-profiles-daemon:hover,
-#idle_inhibitor:hover,
-#workspaces button:not(.active):hover {
+#idle_inhibitor:hover
+{
     opacity: 0.6;
 }
 
