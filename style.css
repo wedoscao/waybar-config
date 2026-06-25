@@ -34,7 +34,7 @@ tooltip label {
 #workspaces button.active {
     background-color: #e64553;
 }
-
+ 
 #clock:hover,
 #wireplumber:hover,
 #power-profiles-daemon:hover,
